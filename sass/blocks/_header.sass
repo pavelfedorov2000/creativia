@@ -1,0 +1,46 @@
+.header
+    position: fixed
+    top: 0
+    left: 0
+    z-index: 100
+    display: block
+    width: 100%
+    height: 70px
+    background-color: rgba(#000000, .5)
+    &__menu
+        display: flex
+        justify-content: flex-end
+        height: 70px
+    &__menu-list
+        display: flex
+        align-items: center
+    &__menu-item
+        margin: 0 15px
+    &__menu-link
+        position: relative
+        color: #a4a4a4
+        font-family: $second-font
+        font-size: 18px
+        text-transform: uppercase
+        letter-spacing: 0.07px
+        transition: .3s all
+        &:before, &:after
+            content: ''
+            +centerX
+            width: 50%
+            height: 2px
+            background-color: $main-color
+            margin: 0 auto
+            display: none
+        &:before
+            top: -25px
+        &:after
+            bottom: -25px
+        &:hover, &:focus
+            color: #ffffff
+            text-decoration: none
+        &:focus
+            &:before, &:after
+                display: block
+        
+        

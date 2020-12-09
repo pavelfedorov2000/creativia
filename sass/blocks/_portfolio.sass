@@ -1,0 +1,135 @@
+.portfolio
+    position: relative
+    min-height: 1076px
+    background-color: #262626
+    padding-bottom: 100px
+    &__menu
+        +flex
+        width: 397px
+        margin: 27px auto 0
+    &__menu-item
+        color: #a4a4a4
+        line-height: 22px
+        text-transform: uppercase
+        cursor: pointer
+        &_active
+            color: #ff0036
+            font-weight: 700
+    &__content
+        display: none
+        flex-wrap: wrap
+        margin-top: 100px
+        &_active
+            display: flex
+        &:nth-of-type(2)
+            .portfolio__item
+                &:nth-child(1)
+                    background: url('../img/portfolio/img-5.webp') center (center/cover) no-repeat
+                &:nth-child(2)
+                    background: url('../img/portfolio/img-6.webp') center (center/cover) no-repeat
+                &:nth-child(3)
+                    background: url('../img/portfolio/img-7.webp') center (center/cover) no-repeat
+                &:nth-child(4)
+                    background: url('../img/portfolio/img-8.webp') center (center/cover) no-repeat
+                &:nth-child(5)
+                    background: url('../img/portfolio/img-1.webp') center (center/cover) no-repeat
+                &:nth-child(6)
+                    background: url('../img/portfolio/img-2.webp') center (center/cover) no-repeat
+                &:nth-child(7)
+                    background: url('../img/portfolio/img-3.webp') center (center/cover) no-repeat
+                &:nth-child(8)
+                    background: url('../img/portfolio/img-4.webp') center (center/cover) no-repeat
+        &:nth-of-type(3)
+            .portfolio__item
+                &:nth-child(1)
+                    background: url('../img/portfolio/img-1.webp') center (center/cover) no-repeat
+                &:nth-child(2)
+                    background: url('../img/portfolio/img-3.webp') center (center/cover) no-repeat
+                &:nth-child(3)
+                    background: url('../img/portfolio/img-5.webp') center (center/cover) no-repeat
+                &:nth-child(4)
+                    background: url('../img/portfolio/img-7.webp') center (center/cover) no-repeat
+                &:nth-child(5)
+                    background: url('../img/portfolio/img-2.webp') center (center/cover) no-repeat
+                &:nth-child(6)
+                    background: url('../img/portfolio/img-4.webp') center (center/cover) no-repeat
+                &:nth-child(7)
+                    background: url('../img/portfolio/img-6.webp') center (center/cover) no-repeat
+                &:nth-child(8)
+                    background: url('../img/portfolio/img-8.webp') center (center/cover) no-repeat
+        &:nth-of-type(4)
+            .portfolio__item
+                &:nth-child(1)
+                    background: url('../img/portfolio/img-2.webp') center (center/cover) no-repeat
+                &:nth-child(2)
+                    background: url('../img/portfolio/img-4.webp') center (center/cover) no-repeat
+                &:nth-child(3)
+                    background: url('../img/portfolio/img-6.webp') center (center/cover) no-repeat
+                &:nth-child(4)
+                    background: url('../img/portfolio/img-8.webp') center (center/cover) no-repeat
+                &:nth-child(5)
+                    background: url('../img/portfolio/img-1.webp') center (center/cover) no-repeat
+                &:nth-child(6)
+                    background: url('../img/portfolio/img-3.webp') center (center/cover) no-repeat
+                &:nth-child(7)
+                    background: url('../img/portfolio/img-5.webp') center (center/cover) no-repeat
+                &:nth-child(8)
+                    background: url('../img/portfolio/img-7.webp') center (center/cover) no-repeat
+    &__item
+        position: relative
+        display: block
+        width: 400px / 1400px * 100%
+        height: 350px
+        cursor: pointer
+        &:nth-child(even)
+            width: 300px / 1400px * 100%
+        &:nth-child(1)
+            background: url('../img/portfolio/img-1.webp') center (center/cover) no-repeat
+        &:nth-child(2)
+            background: url('../img/portfolio/img-2.webp') center (center/cover) no-repeat
+        &:nth-child(3)
+            background: url('../img/portfolio/img-3.webp') center (center/cover) no-repeat
+        &:nth-child(4)
+            background: url('../img/portfolio/img-4.webp') center (center/cover) no-repeat
+        &:nth-child(5)
+            background: url('../img/portfolio/img-5.webp') center (center/cover) no-repeat
+        &:nth-child(6)
+            background: url('../img/portfolio/img-6.webp') center (center/cover) no-repeat
+        &:nth-child(7)
+            background: url('../img/portfolio/img-7.webp') center (center/cover) no-repeat
+        &:nth-child(8)
+            background: url('../img/portfolio/img-8.webp') center (center/cover) no-repeat
+    &__overlay
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 350px
+        background-color: rgba(#000000, .9)
+        opacity: 0
+        +center
+        text-align: center
+        transition: .3s all
+        &:hover
+            opacity: .9
+    &__link
+        position: relative
+        &:before, &:after
+            content: ''
+            +centerXY
+            background-color: #fff
+        &:before
+            width: 23px
+            height: 7px
+        &:after
+            width: 7px
+            height: 23px
+    &__item-title
+        color: #ffffff
+        margin-top: 30px
+        
+        
+        
+
+            
+            

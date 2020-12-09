@@ -1,0 +1,31 @@
+.button
+    width: 120px
+    height: 40px
+    background-color: #262626
+    +center
+    color: #ffffff
+    text-transform: uppercase
+    +btn
+    transition: .3s all
+    &:hover
+        background-color: $main-color
+    &_main
+        display: inline-block
+        width: 170px
+        height: 50px
+        background-color: #131313
+        margin: 50px 15px 0
+    &_psd
+        +centerX
+        bottom: 73px
+        width: 50%
+        height: 50px
+        background-color: #393939
+        font-family: $second-font
+        font-size: 20px
+        font-weight: 500
+    &_order
+        width: 228px / 270px * 100%
+        height: 38px
+        font-family: $second-font
+        font-size: 18px

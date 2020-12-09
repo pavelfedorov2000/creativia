@@ -1,0 +1,29 @@
+.social
+    position: relative
+    height: 383px
+    background: url('../img/bg/social_bg.webp') center (center/cover) no-repeat
+    &__items
+        width: 451px
+        +flex 
+        margin: 0 auto
+        margin-top: 50px
+    &__item
+        svg path
+            transition: .3s all
+        &:hover
+            .social__item-hexagon path
+                fill: $main-color
+            .social__item-icon path
+                fill: #ffffff
+    &__item-img
+        position: relative
+        display: block
+        width: 76px
+        height: 68px
+    &__item-icon
+        +centerXY
+    &__item-num
+        color: #ffffff
+        text-align: center
+        margin-top: 40px
+       

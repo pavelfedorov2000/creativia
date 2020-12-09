@@ -1,0 +1,37 @@
+.service
+    position: relative
+    min-height: 1122px
+    background-color: #272727
+    &__item
+        margin-bottom: 57px
+        cursor: pointer
+        &:hover
+            .service__item-content
+                background-color: $main-color
+            .service__item-icon i
+                color: #ffffff
+    &__item-header
+        display: flex
+        align-items: center
+    &__item-icon
+        position: relative
+        i
+            +centerXY
+            font-size: 25px
+            transition: .3s all
+    &__item-title
+        color: #ffffff
+        font-family: $second-font
+        font-size: 20px
+        font-weight: 500
+        text-transform: uppercase
+        margin-left: 33px
+    &__item-content
+        min-height: 121px
+        background-color:#a4a4a4
+        opacity: .3
+        color: #ffffff
+        line-height: 22px
+        padding: 35px 30px 30px 35px
+        margin-top: 29px
+        transition: .3s all

@@ -1,0 +1,60 @@
+.features
+    position: relative
+    min-height: 990px
+    &__wrapper
+        margin-top: 177px
+        display: flex
+        justify-content: space-between
+    &__list
+        &_right
+            .features__item
+                padding: 10px 20px
+            .features__item-inner
+                justify-content: flex-start
+            .features__item-title
+                text-align: left
+                margin-left: 12px
+                margin-right: 0
+    &__item
+        width: 100%
+        height: 53px
+        border: 1px solid #e7e7e7
+        background-color: #ffffff
+        margin-bottom: 23px
+        padding: 11px 21px 10px 22px
+        transition: .5s all
+        &:hover
+            background-color: $main-color
+            .features__item-title
+                color: #ffffff
+            .features__item-icon svg path
+                fill: #ffffff
+            .features__item-icon i
+                color: $main-color
+    &__item-inner
+        +flex
+        justify-content: flex-end
+    &__item-icon
+        position: relative
+        +center
+        svg
+            width: 37px
+            height: 33px
+        i
+            +centerXY
+    &__item-title
+        color: #262626
+        font-family: $second-font
+        font-size: 20px
+        font-weight: 500
+        text-transform: uppercase
+        text-align: right
+        margin-right: 12px
+    &__img
+        position: absolute
+        bottom: 100px
+        +centerX
+        img
+            display: block
+            margin: 0
+       

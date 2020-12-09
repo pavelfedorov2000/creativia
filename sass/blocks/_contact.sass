@@ -1,0 +1,26 @@
+.contact
+    padding-top: 110px
+    padding-bottom: 0
+    &__info
+        width: 300px
+        height: 226px
+        background: url('../img/contact-info_box.webp') center (center/cover) no-repeat
+        padding-top: 34px
+        padding-left: 24px
+        font-family: $second-font
+        color: #ffffff
+        line-height: 25px
+    &__phone, &__email
+        transition: .3 all
+        &:hover
+            color: $main-color
+.map
+    width: 100%
+    min-height: 575px
+    background: url('../img/bg/map.webp') center (center/cover) no-repeat
+    padding-top: 100px
+    &__inner
+        +flex
+        justify-content: space-around
+        flex-wrap: wrap
+

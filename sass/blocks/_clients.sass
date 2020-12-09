@@ -1,0 +1,48 @@
+.clients
+    position: relative
+    min-height: 652px
+    background: url('../img/bg/clients_bg.webp') center (center/cover) no-repeat
+    &__title
+        color: #ffffff
+        font-family: $second-font
+        font-size: 20px
+        font-weight: 500
+        text-transform: uppercase
+        text-align: center
+    &__carousel
+        margin-top: 50px
+        text-align: center
+    &__review
+        color: #a4a4a4
+        line-height: 22px
+    &__img
+        display: block
+        margin: 0 auto
+        margin-top: 47px
+    &__name
+        color: $main-color
+        font-family: $second-font
+        font-weight: 700
+        text-transform: uppercase
+        margin-top: 17px
+    &__carousel-dots
+        +flex
+        width: 34px
+        margin: 27px auto 0
+    &__carousel-dot
+        width: 8px
+        height: 8px
+        background-color: #e0e0e0
+        &_active
+            background-color: $main-color
+    &__blocks
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+    &__block
+        width: 270px
+        height: 116px
+        box-shadow: inset 0 0 68px rgba(0, 0, 0, 0.75)
+        background-color: #ffffff
+        +center
+        margin-bottom: 40px

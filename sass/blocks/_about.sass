@@ -1,0 +1,118 @@
+.about
+    min-height: 1180px
+    &__text
+        color: #505050
+        font-size: 16px
+        line-height: 22px
+    &__accordion
+        margin-top: 41px
+    &__accordion-item
+        margin-top: 9px
+        &:first-child
+            margin-top: 0
+    &__accordion-header
+        position: relative
+        height: 45px
+        border: 1px solid #e7e7e7
+        background-color: #f7f7f7
+        color: #262626
+        font-family: $second-font
+        font-size: 20px
+        font-weight: 500
+        padding-left: 90px
+        display: flex
+        align-items: center
+        cursor: pointer
+    &__accordion-btn
+        position: absolute
+        top: 0
+        left: 0
+        width: 60px
+        height: 100%
+        +center
+        border-right: 1px solid #e7e7e7
+        span
+            position: relative
+            display: block
+            width: 18px
+            height: 18px
+            border-radius: 50%
+            border: 1px solid #505050
+            &:before, &:after
+                content: ''
+                +centerXY
+                background-color: #505050
+            &:before
+                width: 10px
+                height: 2px
+            &:after
+                width: 2px
+                height: 10px
+    &__img
+        &_main
+            position: relative
+            img
+                display: block
+                margin: 0 auto
+        &_left, &_right
+            position: absolute
+            top: 18px
+            z-index: -100
+        &_left
+            left: 15px
+        &_right
+            right: 15px
+    &__item
+        text-align: center
+        &-icon
+            display: block
+            width: 70px
+            height: 70px
+            border-radius: 50%
+            background-color: $main-color
+            margin: 0 auto
+            +center
+        &-title
+            color: #262626
+            font-family: $second-font
+            font-size: 20px
+            font-weight: 500
+            text-transform: uppercase
+            margin-top: 35px
+        &-descr
+            color: #505050
+            font-size: 16px
+            line-height: 22px
+            margin-top: 27px
+    &__accordion-item_active
+        .about
+            &__accordion-header
+                color: $main-color
+            &__accordion-btn
+                span
+                    border-color: $main-color
+                    &:before
+                        background-color: $main-color
+                    &:after
+                        display: none            
+    &__accordion-content
+        border: 1px solid #e7e7e7
+        background-color: #ffffff
+        color: #505050
+        font-size: 14px
+        line-height: 22px
+    .hidden
+        padding: 0
+        visibility: hidden
+        height: 0
+        overflow: hidden
+        opacity: 0
+        transition: all .2s linear
+        padding: 0 16px
+    .active
+        visibility: visible
+        height: auto
+        overflow: none
+        opacity: 1
+        padding: 16px
+        padding-bottom: 13px

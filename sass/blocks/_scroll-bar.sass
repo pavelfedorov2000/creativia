@@ -1,0 +1,35 @@
+.scroll-bar
+    position: relative
+    display: block
+    width: 515px
+    height: 1px
+    background-color: #262626
+    margin: 100px auto
+    svg
+        +centerXY
+        cursor: pointer
+    &_pink
+        +centerX
+        bottom: 0
+        background-color: $main-color
+        margin: 0
+.scroll-down
+    +centerX
+    bottom: 85px
+    width: 43px
+    height: 43px
+    border-radius: 50%
+    background-color: #f2f2f2
+    &::before
+        content: ''
+        position: absolute
+        top: 35%
+        left: 38%
+        width: 14px
+        height: 14px
+        background-color: transparent
+        border: 5px solid #a2a2a2
+        border-bottom: 0
+        border-left: 0
+        transform: rotate(135deg)
+            
